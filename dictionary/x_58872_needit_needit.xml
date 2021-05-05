@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="a"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="b"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="c"/>
+            </choice>
+        </element>
+        <element label="When due" mandatory="true" max_length="40" name="u_due_date_2" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date" max_length="40" name="u_glide_date_2" type="glide_date"/>
+        <element label="New IP Address (Validated IPV4, IPV6)" max_length="40" name="u_ip_addr_3" type="ip_addr"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_for" reference="sys_user" type="reference"/>
+    </element>
+</database>
